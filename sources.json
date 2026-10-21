@@ -1,0 +1,46 @@
+{
+  "page": "https://support.claude.com/en/articles/13455879-use-claude-cowork-on-team-and-enterprise-plans",
+  "checked": "2026-10-21",
+  "quotes": [
+    {
+      "id": "compliance-api-covers-cowork",
+      "quote": "Cowork sessions via Claude, Claude Desktop, and Claude Mobile are captured in the Compliance API",
+      "why": "The claim that Cowork is invisible to the Compliance API was true earlier in 2026 and is not true of this page"
+    },
+    {
+      "id": "compliance-api-window",
+      "quote": "The Compliance API returns sessions from the most recent 30 days",
+      "why": "The export window is the constraint a retention policy has to be written around"
+    },
+    {
+      "id": "local-history-not-managed",
+      "quote": "admins cannot centrally manage or delete it",
+      "why": "Local session history sits on the member's computer, outside the standard retention policy"
+    },
+    {
+      "id": "no-deletion-endpoint",
+      "quote": "Deletion endpoints for local sessions aren't available yet",
+      "why": "A deletion request on a local session has no API path today"
+    },
+    {
+      "id": "otel-not-audit",
+      "quote": "It doesn't replace audit logging for compliance purposes",
+      "why": "OpenTelemetry to a SIEM is visibility, and Anthropic says so itself"
+    },
+    {
+      "id": "always-allow-off-by-default",
+      "quote": "This setting is off by default",
+      "why": "Write-capable connector tools need a per-task approval unless an owner turns the always-allow setting on"
+    },
+    {
+      "id": "auto-approve-on-by-default",
+      "quote": "This setting is on by default",
+      "why": "Automatically-approve mode is available to members unless an owner turns it off"
+    },
+    {
+      "id": "unannotated-connectors-gated",
+      "quote": "Most custom connectors don't annotate their tools, so every tool on those connectors is gated",
+      "why": "Read-only exemption only applies when the connector annotates the tool"
+    }
+  ]
+}
